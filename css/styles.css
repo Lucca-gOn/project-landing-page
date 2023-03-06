@@ -1,0 +1,323 @@
+/* importar fonte ou imports */
+@font-face {
+    font-family: "open-sans";
+    src: url(../assets/fonts/open-sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "bebas-neue";
+    src: url(../assets/fonts/bebas-neue/BebasNeue-Regular.ttf);
+}
+
+/* propriedades de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+body {
+    background-color: #080324;
+    color: white;
+}
+
+/* HEADER */
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #F9003D;
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 630px;
+    
+   
+}
+
+header nav a {
+    font-family: "bebas-neue";
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    /* espaçamento nas letras */
+    letter-spacing: 1px; 
+    padding: 10px 10px;
+    border-radius: 3px;
+   
+
+}
+/* Quando passa o mouse em cima, fica com sombra */
+header nav a:hover {
+    color:#F9003D;
+    background-color:white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); 
+}
+
+/* MAIN */
+/* SECTION BANNER */
+main .banner {
+    height: 740px;
+    background-image: url(../assets/Imagens/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .section-banner{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+main .banner-flex {
+    width: 560px;
+}
+
+main .banner-flex h1 {
+    color: rgb(255, 255, 255);
+    font-family: "bebas-neue";
+    font-size: 96px;
+    font-weight: 400;
+
+}
+
+main #linha-amarela {
+    border: 1px solid #FFAF00;
+    margin: 20px 0px 20px 0px;
+
+}
+
+main .banner-flex p {
+    color: #F9003D;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 53px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+main #mouse {
+    width: 38px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+/* SECTION SOBRE  */
+
+main .sobre {
+    background-color: #080324;
+    height: 800px;
+
+}
+
+main .sobre h2 {
+    color: #F9003D;
+    font-family: "bebas-neue";
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 76px;
+    padding: 20px 0px 20px 0px;
+
+}
+
+main .sobre .alinhar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .sobre .alinhar img {
+    width: 490px;
+
+}
+
+main .sobre .alinhar .participantes {
+    width: 590px;
+    
+}
+
+main .sobre .alinhar .participantes span {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+
+}
+
+main .sobre .alinhar .participantes h3 {
+    color: #FFAF00;
+    font-family: "bebas-neue";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
+
+main .sobre .alinhar .participantes p {
+    color: white;
+    font-family: "open-sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* SECTION INFO */
+
+main .info {
+    height: 200px;
+    background-image: url(../assets/Imagens/imagem-fundo-info.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .info .info-alinhar {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main .info h4 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 27px;
+
+    padding: 0px 0px 10px 0px;
+
+}
+
+main .info .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a259f7;
+    
+    width: 289px;
+    height: 100px;
+}
+
+main .info .box span {
+    color: #a259f7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: uppercase;
+
+}
+
+/* SECTION ENDEREÇO */
+
+main .adress {
+    height: 520px;
+    background-image: url(../assets/Imagens/imagem-fundo-endereco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .adress .adress-alinhar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 0px 80px 0px;
+}
+
+main .adress h3 {
+    
+    color: #FFAF00;
+    font-family: "bebas-neue";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
+
+main .adress .box-adress {
+    border: 2px solid #340B65;
+    background-color: #010010;
+
+
+    width: 899px;
+    height: 203px;
+}
+
+main .adress .text-adress {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+
+    width: 435px;
+    height: 88px;
+    
+}
+
+main .adress .text-adress p {
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+main .adress .mapa{
+    position: relative;
+    bottom: 285px;
+    left: 543px;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+   background-color: #F9003D;
+   height: 82px;
+}
+
+footer .footer-alinhar {
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .footer-alinhar span {
+    color: white;
+    font-family: "open-sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
