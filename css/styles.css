@@ -62,9 +62,13 @@ header nav a {
     letter-spacing: 1px; 
     padding: 10px 10px;
     border-radius: 3px;
-   
-
+    
 }
+
+header #menu-smartphone {
+    display: none;
+}
+
 /* Quando passa o mouse em cima, fica com sombra */
 header nav a:hover {
     color:#F9003D;
@@ -320,4 +324,50 @@ footer .footer-alinhar span {
     font-weight: 400;
     line-height: 24px;
     
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets >= 768px até 991px */
+@media screen and (max-width: 991px) {
+   
+    
+}
+/* Smarthphone >= 0px até 767px */
+@media screen and (max-width: 767px) {
+   .mostrarMenu {
+    left: 0;
+   }
+   
+    /* main,footer {
+    display: none;
+   } */
+   
+   header #menu-smartphone {
+    display: block;
+   }
+    
+   header nav {
+    position: fixed;
+    top: 60px;
+    left:-80vw;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F9003D;
+    /* Viewport width */
+    width: 80vw;  
+    
+    /* Viewport Height */
+    height: 100vh;
+    transition: left 1.0s;
+    
+   }
+
+   header nav a {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+   }
+   
 }
