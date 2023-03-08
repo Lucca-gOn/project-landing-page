@@ -337,6 +337,7 @@ footer .footer-alinhar span {
 @media screen and (max-width: 767px) {
    .mostrarMenu {
     left: 0;
+    opacity: 1;
    }
    
     /* main,footer {
@@ -358,8 +359,9 @@ footer .footer-alinhar span {
     width: 80vw;  
     
     /* Viewport Height */
-    height: 100vh;
-    transition: left 1.0s;
+    height: calc(100vh - 60px);
+    opacity: 0;
+    transition: left 1.0s, opacity 0.5s;
     
    }
 
@@ -369,5 +371,34 @@ footer .footer-alinhar span {
     border: 2px solid white;
     border-radius: 5px;
    }
+  
+   /* SECTION BANNER */
    
+   main .banner-flex h1 {
+    color: white;
+    font-family: "bebas-neue";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    
+   }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
